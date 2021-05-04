@@ -1,0 +1,129 @@
+<p>OSINTDojo Sakura - TryHackMe Room </p>
+
+<p>I decided for my samurai badge to write about sakura and the steps that i have took to resolve the challenge from OSINT Dojo.</p>
+
+<h1>Task 1 - INTRODUCTION</h1>
+
+<p><u>Are you ready to begin?</u></p>
+<p><b>anwser: Let's Go!</b></p>
+
+<h1>Task 2 - TIP-OFF</h1>
+
+<p><u>What username does the attacker go by?</u></p>
+
+<p>In this task i open the following url https://raw.githubusercontent.com/OsintDojo/OsintDojo.github.io/d846483eb41dd4fdb6d00ac84ecdb4a66be6a191/TryHackMe/Sakura/sakurapwnedletter.svg</p>
+
+<p>and observe that source code view-source:https://raw.githubusercontent.com/OsintDojo/OsintDojo.github.io/d846483eb41dd4fdb6d00ac84ecdb4a66be6a191/TryHackMe/Sakura/sakurapwnedletter.svg and i have found the following path containing the username of hacker "inkscape:export-filename="/home/SakuraSnowAngelAiko/Desktop/pwnedletter.png"</p>
+
+<p><b>anwser: SakuraSnowAngelAiko</b></p>
+
+
+<h1>Task 3 - RECONNAISSANCE</h1>
+
+<p><u>What is the full email address used by the attacker?</u></p>
+
+<p>Using the username found previusly SakuraSnowAngelAiko i run a username correlation using https://whatsmyname.app/ and i found the hacker github profile.</p>
+
+<p>Then i open the following github https://github.com/SakuraSnowAngelAiko and open the repository of PGP https://github.com/sakurasnowangelaiko/PGP</p>
+
+<p>Then i imported the PGP key into mail velop and has able to see the hacker's email.</p>
+
+<p><b>answer: SakuraSnowAngel83@protonmail.com</b></p>
+
+<p><u>What is the attacker's full real name?</u></p>
+
+<p>Also using the username found priviusly i was able to locate from google a linkedin profile of the hacker https://www.linkedin.com/in/sakurasnowangelaiko/?originalSubdomain=jp and has able to have is full name.</p>
+
+<p><b>answer: Aiko Abe</b></p>
+
+
+<h1>Task 4 - UNVEIL</h1>
+
+<p><u>What cryptocurrency does the attacker own a cryptocurrency wallet for?</u></p>
+
+<p>I look into the github that we have found privisly and i found a repository named ETH that means Ethereum </p>
+
+<p><b>answer: Ethereum</b></p>
+
+
+
+<p><u>What is the attacker's cryptocurrency wallet address?</u></p>
+
+<p>In the same github that we have found previusly in the same repository ETH i have saw the history of the files and i notice the wallet address:</p>
+
+<p>https://github.com/sakurasnowangelaiko/ETH/commit/5d83f7bb37c2048bb5b9eb29bb95ec1603c40135#diff-ed62f5e8bb5f88d470bd6a8aa3cf3c18ad1be17b29153b4896f45e7e57cfb5da</p>
+
+<p><b>answer: 0xa102397dbeeBeFD8cD2F73A89122fCdB53abB6ef</b></p>
+
+<p><u>What mining pool did the attacker receive payments from on January 23, 2021 UTC?</u></p>
+
+<p>Using the same url above mentioned https://github.com/sakurasnowangelaiko/ETH/commit/5d83f7bb37c2048bb5b9eb29bb95ec1603c40135#diff-ed62f5e8bb5f88d470bd6a8aa3cf3c18ad1be17b29153b4896f45e7e57cfb5da</p>
+
+<p>we can see the minning pool that the hacker used.</p>
+
+
+<p><b>answer: Ethermine</b></p>
+
+<p><u>What other cryptocurrency did the attacker exchange with using their cryptocurrency wallet?</u></p>
+
+<p>In this section i purely guess it since im not really experience in crypto OSINT and i ended up searching some crypto in google and i have found the currency.</p>
+
+<p><b>answer: Tether </b></p>
+
+
+
+<h1>Task 5 - TAUNT</h1>
+
+<p><u>What is the attacker's current Twitter handle?</u></p>
+
+<p>In this section we are given an image containing a username @AikoAbe3 so decided to search in twitter for that username and i came across her profile https://twitter.com/SakuraLoverAiko</p>
+
+<p><b>answer: SakuraLoverAiko</b></p>
+
+
+<p><u>What is the URL for the location where the attacker saved their WiFi  SSIDs and passwords?</u></p>
+
+<p>In this section i use the hint tab because i didnt want it to go to dark net so i open the url that has on the int https://ibb.co/1rHfgVb i saw another url for an .onion website.</p>
+
+<p>The location of the saved Wifi SSIDs and pasword is http://depastedihrn3jtw.onion/show.php?md5=0a5c6e136a98a60b8a21643ce8c15a74 based on the image and also the md5 result that is mentioned on the website.</p>
+
+<p><b>answer: http://depastedihrn3jtw.onion/show.php?md5=0a5c6e136a98a60b8a21643ce8c15a74</b></p>
+
+<p><u>What is the BSSID for the attacker's Home WiFi?</u></p>
+
+<p>From the information collected in the question above http://depastedihrn3jtw.onion/show.php?md5=0a5c6e136a98a60b8a21643ce8c15a74 we can see an SSID named DK1F-G that is the hacker home Wifi.</p>
+
+<p>I took that information DK1F-G and use wigle to find their mac address.</p>
+
+<p><b>answer: 84:af:ec:34:fc:f8</b></p>
+
+
+<h1>Task 6 - HOMEBOUND</h1>
+
+<p><u>What airport is closest to the location the attacker shared a photo from prior to getting on their flight?</u></p>
+
+<p>From the twitter that i have found i found this picture https://twitter.com/SakuraLoverAiko/status/1353471045148110848 and i reverse image search the buildings around and look for the nearest airport .</p>
+
+<p><b>answer: DCA</b></p>
+
+
+<p><u>What airport did the attacker have their last layover in?</u></p>
+
+<p>From the twitter the attacker said that this picture has her last layover https://twitter.com/SakuraLoverAiko/status/1353717763097899010/photo/1 so i decided to rum a reverse image search and look for the aiport.
+</p>
+
+<p><b>answer: HND</b></p>
+
+
+<p><u>What lake can be seen in the map shared by the attacker as they were on their final flight home?</u></p>
+
+<p>From the twitter we have a picture of a lake in this post https://twitter.com/SakuraLoverAiko/status/1353733617487241217/photo/1 and i reverse image search a look into google for a lake near this location and i have found it.
+</p>
+
+<p><b>answer: Lake Inawashiro</b></p>
+
+<p><u>What city does the attacker likely consider "home"?</u></p>
+
+<p>This has funny i found this anwser in the url from the attackers SSIDs and passwords here it says City Free Wifi.</p>
+
+<p><b>answer: Hirosaki</b></p>
