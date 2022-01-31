@@ -1,0 +1,104 @@
+
+<h1><p>OSINT Dojo Shogun Badge - OSINT Tricks </p></h1>
+
+<h1>I decided for my some tricks in this blog post about OSINT Tricks</h1>
+
+<h1>OPSEC</h1>
+<p>OPSEC is a important part of OSINT</p>
+<p>We cant do a better and proper job if we are exposed on the internet</p>
+<p>We should use our OSINT knowladge to help others but also to protect us on the internet</p>
+<p>We can use <a href="https://justgetmydata.com/">https://justgetmydata.com/</a> to obtain your data from web services.
+
+<h1>Socket Puppets</h1>
+<p>Socket account are also very important for us to dont leave track of our investigation on social media</p>
+<p>Depending of the website socket account creation can be easy or dificult</p>
+<p>Most of the investigation will ocur on facebook, intagram, twitter and likedin since everyone has accounts on those plataforms</p>
+<p>There are some guides usefull for this like <a href="https://www.youtube.com/watch?v=3KPO58wkw7M">Introduction to Setting up Sock Puppets for OSINT</p></a>
+
+<h1>Username correlation</h1>
+<p>Username correlation is one of the best techniques that we can do while performing an investigation.</p>
+<p>This can be used to correlate criminal handlers, protect yourself online, looking for missing people accounts, among others</p>
+<p>One of my favourite resources for this is <a href="https://whatsmyname.app/">https://whatsmyname.app/</a></p>
+<p>Correlating username can also be done using other technique known was Google Dorking.
+
+<h1>Google Dorking</h1>
+<p>Google Dorking or Google Hacking was created by <a href="https://en.wikipedia.org/wiki/Johnny_Long">Johnny_Long</a>
+<p>With this technique we are filtering google for specific advanced queries that allow us to filter specific results</p>
+<p>Some google dork can be:</p>
+<ul>
+  <li>Site:example.com - specifie what website we want to search.</li>
+  <li>Intext:cats - specifie what we want to search in the text of the page. Example we want cats.</li>
+  <li>Inurl:example.com - specifie what we want to search on the url of the page</li>
+  <li>Ext:pdf - specifie that we want all the pdf extensions.</li>
+  <li>intitle:dogs - specifie that in the title of the page contains dogs</li>
+  <li>"calculator" - this means that we are looking for exact match.</li>
+  <li>site:*.example.com - this means that we are looking for everything under *.example.com</li>
+  <li>site:*.example.com - site1.example.com - this means that we are looking for everything under *.example.com except for site1.example.com</li>
+  <li>"calculator" | "machine" - this means that we are looking or for the word calculator or for the word machine</li>
+  <li>"calculator" & "machine" - this means that we are looking  for the word calculator and for the word machine</li>
+</ul>
+<p>More advanced google dorks can be used with icons</p>
+<p>Example:site:http://linkedin.com intext:"✆" OR "☎" OR "☏" OR "Celular" AND intext:cyber security</p>
+<p>We are filtering linkedin results that in text contains 1 of the 3 icons and in the text cyber security</p>
+<p>For more google dorks we can use google hacking database</p>
+<p><a href="https://www.exploit-db.com/google-hacking-database">Google hacking database</a> is a colection of google dorks created by researchers to filter specific results</p>
+
+<h1>Reverse Image Search</h1>
+<p>Reverse Image Search is one technique that is very common in the fild that allows you to search for a specific picture on the search engine</p>
+<p>In this case i really love to use <a href="https://yandex.ru/images/">https://yandex.ru/images/</a></p>
+<p>There are other websites that we can perform such technique such has google images <a href="https://images.google.com/">https://images.google.com/</a> and bing <a href="https://www.bing.com/?scope=images&nr=1&FORM=NOFORM"></a></p>
+
+<h1>Cryptocurrency</h1>
+<p>Cryptowallets is a nice topic to perform OSINT and discover some stuff</p>
+<p>Most of the criminals and also normal people use them and we can discover some interesting stuff like transtions, total money receive, among others.</p>
+<p>There are some websites for this but in terms of bitcoin i like to use <a href="https://www.bitcoinabuse.com/">https://www.bitcoinabuse.com/</a> and for Ethereum <a href="https://etherscan.io/"></a></p>
+
+<h1>Cryptography</h1>
+<p>Cryptography is also important</p>
+<p>When we have PGP key we can use something like <a href="https://mailvelope.com/en">https://mailvelope.com/en</a> to extract the email behing that PGP key and perform some OSINT on it.
+
+<h1>Archive content</h1>
+<p>This is also a good and interesting technique</p>
+<p>We are looking for deleted content that has been archived and saved</p>
+<p>The most common and more used is of course <a href="https://archive.org/web/">https://archive.org/web/</a></p>
+<p>We can use also google cache results <a href="https://cachedview.com/">https://cachedview.com/</a>
+
+<h1>Breach passwords and emails</h1>
+<p>Breach password is also another interesting topic for investigation</p>
+<p>With this we can have accounts and also check our opsec and using with investigation</p>
+<p>A good resource for this and also very common in the community is <a href="https://haveibeenpwned.com/">https://haveibeenpwned.com/</a>
+<p>That can be used to check if an emails has compromise in a breach and also to check if our password has appear on the internet</p>
+
+<h1>IP's</h1>
+<p>IP's is also another interesting topic</p>
+<p>Most of the time we use <a href="https://www.shodan.io/">https://www.shodan.io/</a>
+<p>Shodan allows us to see services, ports, ips, among other stuff that can be really useful and handy in a investigation.
+<p>Some Shodan dorks can be:</p>
+<ul>
+  <li>os: quering a specific operating system. Example os:"windows 7"</li>
+  <li>country: quering a specific country. Example country:"UK"</li>
+  <li>port: quering a specific port. Example: "port: 53" </li>
+  <li>city: quering a spcific city. Example: "city: London"</li>
+  <li>geo: quering a specific geographical coordinate. Example: "geo:"56.913055,118.250862""</li>
+  <li>net: quering a specific IP address or /x CIDR. Exaple :"net:210.214.0.0/16"
+  <li>org: quering a specific organization. Example: org:microsoft</li>
+  <li>device: quering a specific device. Example: device:firewall</li>
+  <li>server: quering a specific server. Example: server: nginx</li> 
+</ul>
+<p>There are other alternatives to it like <a href="https://censys.io/">https://censys.io/</a> and <a href="https://spyse.com/">https://spyse.com/</a>
+
+<h1>Websites</h1>
+<p>There are a lot of resources online available about this topic</p>
+<p>Normaly i use <a href="https://urlscan.io/">https://urlscan.io/</a>to scan a website since its a sandbox that can be used for this purpose and also to protect us
+<p>Also perform some whois on the domains to see is registrant information</p>
+
+<h1>Darknet</h1>
+<p>Talking about Darknet OSINT is a different type of OSINT due to the nature of it</p>
+<p>There are a lot of services the most common and people know the most is hidden wiki</p>
+<p>The <a href="http://zqktlwiuavvvqqt4ybvgvi7tyo4hjl5xgfuvpdf6otjiycgwqbym2qad.onion/wiki/index.php/Main_Page">Hidden Wiki</a> is the name of several censorship-resistant wikis operating as Tor hidden services that anyone can anonymously edit after registering on the site. The main page serves as a directory of links to other . onion sites.</p>
+<p>Also we can use ahmia for this purpose</p>
+<p><a href="https://ahmia.fi/"> Ahmia</a> searches hidden services on the Tor network. To access these hidden services, you need the Tor browser bundle. Abuse material is not allowed on Ahmia.<p>
+
+<h1>Wifi</h1>
+<p>Cant finish my tricks without talking about <a href="https://wigle.net/">https://wigle.net/</a></p>
+<p>Wigle is a powerfull tool can that allows us to track bluetooth, SSID, BSSID and among stuff that we can use to geo locate criminals and other people.</p>
