@@ -1,0 +1,139 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<title>Miguel Santareno</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-user-secret  {font-size:200px}
+</style>
+<body>
+
+<div class="w3-top">
+  <div class="w3-bar w3-light-grey w3-card  w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+   <a href="./index.html" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="./acknowledgements.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Acknowledgements</a>
+    <a href="./livehackingevents.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Hacking Events</a>
+    <a href="./publicprofiles.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Public Profiles</a>
+    <a href="./background.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Background education</a>
+    <a href="./resources.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Resources</a>
+    <a href="./volunteer.html" class="w3-bar-item w3-button w3-padding-large">Volunteer</a>
+
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="./index.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="./acknowledgements.html" class="w3-bar-item w3-button w3-padding-large">Acknowledgements</a>
+    <a href="./livehackingevents.html" class="w3-bar-item w3-button w3-padding-large">Hacking Events</a>
+    <a href="./publicprofiles.html" class="w3-bar-item w3-button w3-padding-large">Public Profiles</a>
+    <a href="./background.html" class="w3-bar-item w3-button w3-padding-large">Background education</a>
+    <a href="./resources.html" class="w3-bar-item w3-button w3-padding-large">Resources</a>
+    <a href="./volunteer.html" class="w3-bar-item w3-button w3-padding-large">Volunteer</a>
+  </div>
+</div>
+<!-- Header -->
+<header class="w3-container w3-light-blue w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Miguel Santareno</h1>
+</header>
+
+<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-third w3-center">
+      <i class="fa fa-user-secret  w3-padding-64 w3-text-grey w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+  <h1>OSINT Dojo - OSINT challenge week 01/31/2021 - Ransomware</h1>
+
+20 de set de 2021
+
+<h2>The challenge is the following:</h2>
+
+<a href="https://twitter.com/OSINTDojo/status/1488015774480355330"><img src=./ransomware.png></img></a>
+
+<h2>Methodology:</h2>
+
+<h3>I used shodan with the following dork: windows server 2008 R2 standard "bad news" and ended up with two results</h3>
+
+<a href="https://images.shodan.io/?query=windows+server+2008+R2+standard+%22bad+news%22"><img src="./shodanransom.png"></img></a>
+
+<h3>Filtering the results from the OSINT Dojo picture the picture doesnt contain the EN windows button so the result is the image without the EN button</h3>
+
+<a href="https://images.shodan.io/?query=windows+server+2008+R2+standard+%22bad+news%22"><img src="./shodanransom.png"></img></a>
+
+<a href="https://beta.shodan.io/host/136.243.152.235#3389"><img src="./ip.png"></img></a>
+
+<a href="https://beta.shodan.io/host/136.243.152.235#3389"><img src="./text.png"></img></a>
+
+<h3>After that do a exact match of the text of the picture "Dear Owner. Bad news: your server was hacked. For more information and recommendations, write to our experts by e-mail. When you start Windows, Windows Defender works to help protect your PC by scanning for
+malicious or unwanted software." on google and watch the results</h3>
+
+<a href="https://www.google.com/search?q=%22Dear+Owner.+Bad+news%3A+your+server+was+hacked.+For+more+information+and+recommendations%2C+write+to+our+experts+by+e-mail.+When+you+start+Windows%2C+Windows+Defender+works+to+help+protect+your+PC+by+scanning+for+malicious+or+unwanted+software.%22&rlz=1C1CHBD_pt-PTPT953PT953&oq=%22Dear+Owner.+Bad+news%3A+your+server+was+hacked.+For+more+information+and+recommendations%2C+write+to+our+experts+by+e-mail.+When+you+start+Windows%2C+Windows+Defender+works+to+help+protect+your+PC+by+scanning+for+malicious+or+unwanted+software.%22&aqs=chrome.0.69i59.1160j0j7&sourceid=chrome&ie=UTF-8"><img src="./google.png"></img></a>
+
+<h3>From google results  we can see the name of the ransomware</h3> 
+
+<h3>If we open the second website we have the name of the ransomware and also the extensions</h3>
+
+<a href="http://www.wangqingzheng.com/anquanke/96/86496.html"><img src="./ext.png"></img></a>
+
+
+
+<h2>Answers:</h2>
+
+<h3>What IP is currently displaying the attached message?</h3>
+<h3>136.243.152.235</h3>
+
+<h3>Which Ransomware is responsible for the attached message?</h3>
+<h3>SOREBRECT Ransomware</h3>
+
+<h3>What file extension does this strain of Ransomware utilize?</h3>
+<h3>.pr0tect</h3>
+
+
+<a href="https://twitter.com/MiguelSantareno/status/1439947446956789764"><img src="./twitter1.png"></img></a>
+<a href="https://twitter.com/MiguelSantareno/status/1439947446956789764"><img src="./twitter2.png"></img></a>
+
+    </div>
+  </div>
+</div>
+  
+
+<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">Quote of the day: Try Harder!</h1>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">  
+   <script src="https://tryhackme.com/badge/28767" width="500px"></script>
+  <div class="w3-xlarge w3-padding-32">
+    <a href="https://www.google.pt"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/MiguelSantareno"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/miguelsantareno/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+ </div>
+   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+</footer>
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
